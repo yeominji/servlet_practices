@@ -19,7 +19,7 @@
     <description></description>
     <display-name>HelloServlet</display-name>
     <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>com.douzone.helloweb.comtroller.HelloServlet</servlet-class>
+    <servlet-class>com.douzone.helloweb.controller.HelloServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>

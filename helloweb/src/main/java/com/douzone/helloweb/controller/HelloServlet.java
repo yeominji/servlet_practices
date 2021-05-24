@@ -1,4 +1,4 @@
-package com.douzone.helloweb.comtroller;
+package com.douzone.helloweb.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
