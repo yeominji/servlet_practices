@@ -1,0 +1,24 @@
+/helloweb
+     |
+     |------src
+     |        | -------main
+     |        |----------|-------java
+                          |-------  |------/contoroller
+                          |-------  |--------|---HelloServelt.java
+                          |-------resource
+                                     |----/config
+                                              |------settings .xml
+===================================================================================
+                          |-------webapp
+                                      | -----WEB-INF
+                                                    |------web.xml
+                                                    |-------/classes
+                                                    |------------|------/contoroller
+                                                    |                          |---HelloServelt.java
+                                                    |------ /lib
+                                                    |           |------mariadb-client.xx.jar
+
+
+                                                    |-----index.jsp
+                                                    |-----/images
+                                                             |---------proflie.jpg
