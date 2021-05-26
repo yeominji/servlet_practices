@@ -30,11 +30,12 @@ public class GuestbookController extends HttpServlet {
 			String action = request.getParameter("a");
 			
 			if("form".equals(action)) {
-				// view로 포워딩
+			
 				RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/deleteform.jsp");
 				rd.forward(request, response);
-			} else if("add".equals(action)) {
-				//1. 요청처리
+			} else if("delete".equals(action)) {
+				String no = request.getParameter("no");
+				String password = request.getParameter("password");
 
 				
 				String Name = request.getParameter("name");
