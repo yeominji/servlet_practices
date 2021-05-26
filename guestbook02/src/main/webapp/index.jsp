@@ -37,7 +37,7 @@ int count = list.size();
 			<td>[<%=count-- %>]</td>
 			<td><%=vo.getName()%></td>
 			<td><%=vo.getRegDate() %></td>
-			<td><a href="<%=request.getContextPath()%>/deleteform.jsp">삭제</a></td>
+			<td><a href="<%=request.getContextPath()%>/gb?a=deleteform">삭제</a></td>
 		</tr>
 		<tr>
 			<td colspan=4><%=vo.getMessage() %></td>

@@ -40,27 +40,27 @@ public class GuestbookController extends HttpServlet {
 				String Name = request.getParameter("name");
 				String Password = request.getParameter("password");
 				String Message = request.getParameter("message");
-	
-			
-				GuestbookDao vo = new GuestbookVo();
-				vo.setName(name);
-				vo.setPassword(password);
-				vo.setMessage(message);
 				
+			
+				GuestbookVo vo = new GuestbookVo();
+				vo.setName(Name);
+				vo.setPassword(Password);
+				vo.setMessage(Message);
+				vo.setRegDate(LocalDateTime.now().toString());
 				
 			      new GuestbookDao().insert(vo);
-				// 2. redirect 응답 
-				response.sendRedirect(request.getContextPath() + "/el");
+			
+				response.sendRedirect(request.getContextPath() + "/gd");
 			} else {
-				/* default request(action) */
 				
-				//1. 요청처리
+				
+				
 				List<GuestbookVo> list = new GuestbookDao ().findAll();
 				
-				//2. request범위에 데이터(객체) 저장
+			
 				request.setAttribute("list", list);
 				
-				//3. view로 포워딩
+				
 				RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 				rd.forward(request, response);
 			}

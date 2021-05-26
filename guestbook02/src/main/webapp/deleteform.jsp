@@ -5,8 +5,8 @@
 <title>방명록</title>
 </head>
 <body>
-	<form method="post" action="<%=request.getContextPath() %>/delete.jsp">
-	<input type='hidden' name="no" value="10">
+	<form method="post" action="<%=request.getContextPath() %>/gb"method="post">
+	<input type='hidden' name="a" value="10">
 		<table>
 			<tr>
 				<td>비밀번호</td>
@@ -22,7 +22,7 @@
 		
 
 		<br/>
-	<a href="<%=request.getContextPath()%>">메인으로 돌아가기</a>
+	<a href="<%=request.getContextPath()%>>gb">메인으로 돌아가기</a>
 	</form>
 </body>
 </html>
