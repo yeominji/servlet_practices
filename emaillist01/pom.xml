@@ -25,7 +25,7 @@
 				<artifactId>tomcat-maven-plugin</artifactId>
 				<configuration>
 					<url>http://192.168.80.102:8080/manager/text</url>
-					<path>emaillist01</path>
+					<path>/emaillist01</path>
 					<username>admin</username>
 					<password>manager</password>
 				</configuration>
