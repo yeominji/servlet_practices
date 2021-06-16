@@ -75,5 +75,6 @@
 		<module>emaillist02</module>
 		<module>guestbook02</module>
 		<module>jstlel</module>
+		<module>hellospring05</module>
 	</modules>
 </project>
